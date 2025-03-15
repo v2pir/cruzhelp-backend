@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import backend.bot_no_gui as bot
+import bot_no_gui as bot
 
 app = Flask(__name__)
 CORS(app)  # Allows all origins

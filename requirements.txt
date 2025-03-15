@@ -1,5 +1,5 @@
 beautifulsoup4==4.13.3
-Flask==3.1.0
+flask==3.1.0
 Flask_Cors==3.0.10
 gradio==5.20.1
 langchain_chroma==0.2.2

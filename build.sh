@@ -18,11 +18,7 @@ pip install --upgrade pip setuptools wheel
 # Install lxml using a precompiled wheel to avoid compilation issues
 pip install --no-build-isolation --no-cache-dir --prefer-binary lxml
 
-pip install aiofiles requests unstructured[all] unstructured-client
-
-pip install --upgrade aiofiles requests
-
-pip install --upgrade unstructured[all] unstructured-client
-
 # Install the rest of your dependencies
 pip install -r requirements.txt
+
+pip install unstructured[all] unstructured-client

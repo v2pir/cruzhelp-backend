@@ -18,7 +18,7 @@ pip3 install --upgrade pip setuptools wheel
 # Install lxml using a precompiled wheel to avoid compilation issues
 pip3 install --no-build-isolation --no-cache-dir --prefer-binary lxml
 
-pip3 install unstructured[all] unstructured-client
+pip install "unstructured[md]"
 
 # Install the rest of your dependencies
 pip3 install -r requirements.txt

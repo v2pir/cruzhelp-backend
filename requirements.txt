@@ -10,4 +10,3 @@ openai==1.66.2
 python-dotenv==1.0.1
 requests==2.28.1
 hypercorn==0.17.3
-werkzeug==2.0.3

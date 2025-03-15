@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import bot_no_gui as bot
+import backend.bot_no_gui as bot
+import os
 
 app = Flask(__name__)
 CORS(app)  # Allows all origins
@@ -32,4 +33,5 @@ def handle_request():
     return jsonify({"error": "Invalid request"}), 400
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000, debug=True)
+    port = int(os.getenv("PORT", 8000))  # Get PORT from environment or default to 8000
+    app.run(host='0.0.0.0', port=port, debug=True)

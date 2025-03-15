@@ -1,8 +1,8 @@
 from openai import OpenAI
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_chroma import Chroma
-import backend.webscraper as web
-import backend.database_init as init_vector
+import webscraper as web
+import database_init as init_vector
 
 def create_database(website):
     web.run(website)

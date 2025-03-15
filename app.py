@@ -33,5 +33,5 @@ def handle_request():
     return jsonify({"error": "Invalid request"}), 400
 
 if __name__ == '__main__':
-    port = int(os.getenv("PORT", 8000))  # Get PORT from environment or default to 8000
-    app.run(host='0.0.0.0', port=port, debug=True)
+    port = int(os.getenv("PORT", 5000))  # Get Render's assigned port
+    app.run(host='0.0.0.0', port=port)   # Listen on all interfaces

@@ -13,14 +13,14 @@ apt-get install -y \
     pkg-config
 
 # Upgrade pip to the latest version
-pip install --upgrade pip setuptools wheel
+pip3 install --upgrade pip setuptools wheel
 
 # Install lxml using a precompiled wheel to avoid compilation issues
-pip install --no-build-isolation --no-cache-dir --prefer-binary lxml
+pip3 install --no-build-isolation --no-cache-dir --prefer-binary lxml
 
 # Install the rest of your dependencies
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
-pip install hypercorn
+pip3 install hypercorn
 
-pip install unstructured[all] unstructured-client
+pip3 install unstructured[all] unstructured-client

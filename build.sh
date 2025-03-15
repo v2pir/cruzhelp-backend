@@ -20,5 +20,9 @@ pip install --no-build-isolation --no-cache-dir --prefer-binary lxml
 
 pip install aiofiles requests unstructured[all] unstructured-client
 
+pip install --upgrade aiofiles requests
+
+pip install --upgrade unstructured[all] unstructured-client
+
 # Install the rest of your dependencies
 pip install -r requirements.txt

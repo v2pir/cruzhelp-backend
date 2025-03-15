@@ -21,4 +21,6 @@ pip install --no-build-isolation --no-cache-dir --prefer-binary lxml
 # Install the rest of your dependencies
 pip install -r requirements.txt
 
+pip install hypercorn
+
 pip install unstructured[all] unstructured-client
